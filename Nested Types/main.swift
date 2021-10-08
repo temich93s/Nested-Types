@@ -54,3 +54,11 @@ struct BlackjackCard {
 let theAceOfSpades = BlackjackCard(rank: .ace, suit: .spades)
 print("theAceOfSpades: \(theAceOfSpades.description)")
 // Выведет "theAceOfSpades: suit is ♠, value is 1 or 11"
+
+
+//MARK: Ссылка на вложенные типы
+print("\n//Ссылка на вложенные типы")
+
+let heartsSymbol = BlackjackCard.Suit.hearts.rawValue
+// heartsSymbol равен "♡"
+print(heartsSymbol)
